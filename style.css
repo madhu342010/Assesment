@@ -1,6 +1,8 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 10px;
+  margin: 10px;
+  border: 10px;
+
 }
 h1
 {
@@ -32,14 +34,27 @@ li{
   display: inline;
   padding: 40px;
   margin: 40px;
-  /*background-color: beige;*/
+  box-sizing: border-box;
+    
 }
-div
+.item
 {
-  padding: 50px;
-  margin: 50px;
-  border: 10px;
+font-size: 30px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+list-style-position: outside ;
+display: inline;
+background-color:orange;
+}
+
+}
+.div
+{
+  padding: 30px;
+  margin: 30px;
+  border: 60px;
   background-color: darkcyan;
+  text-align: right;
 }
 
 p {
@@ -51,4 +66,34 @@ p {
   margin: 20 px;
   border: 10px;
   border-color: crimson;
+}
+.grid-container {
+  display: grid;
+  display: inline-grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  background-color: blanchedalmond;
+  padding: 40px;
+  margin: 40px;
+  border: 20px;
+  font-size: 60px;
+  text-align: center;
+  border-style: dotted;
+
+}
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item3 {
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
